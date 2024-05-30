@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://morphinese.github.io/parcel/",
+  "homepage": "https://savchenkoamalia.github.io/Yacht-Adventures/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/morphinese/parcel.git"
+    "url": "git+https://github.com/SavchenkoAmalia/Yacht-Adventures.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/morphinese/parcel/issues"
+    "url": "https://github.com/SavchenkoAmalia/Yacht-Adventures/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
