@@ -5,17 +5,17 @@
   "homepage": "https://savchenkoamalia.github.io/Yacht-Adventures/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel/"
+    "build": "parcel build src/*.html --public-url /Yacht-Adventures/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savchenkoamalia/Yacht-Adventures.git"
+    "url": "git+https://github.com/SavchenkoAmalia/Yacht-Adventures.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/savchenkoamalia/Yacht-Adventures/issues"
+    "url": "https://github.com/SavchenkoAmalia/Yacht-Adventures.git/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
