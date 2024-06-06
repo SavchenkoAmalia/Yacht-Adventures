@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700,500italic=swap');
+
+//!Base
+@import "./base/reset.scss";
+@import "./base/variables.scss";
+
+body {
+  font-family: $mainFontFamily;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+//!Components
+@import "./components/footer.scss";
+@import "./components/header.scss";
+
+//!pages
+@import "./pages/home.scss";
