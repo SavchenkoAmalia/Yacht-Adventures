@@ -177,10 +177,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: #1F212D;
 }
 
 .footer {
@@ -226,4 +225,93 @@ body {
 }
 .footer__description-one {
   padding-right: 32px;
+}
+.header {
+  background-color: #1F212D;
+  margin-bottom: 100px;
+}
+.header__container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  gap: 5px;
+}
+.header__title {
+  margin-top: 6px;
+  font-family: "DM+Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 118%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header__input, .header__label {
+  display: none;
+}
+.header__input:checked ~ .header__label span {
+  transform: rotate(-45deg);
+}
+.header__input:checked ~ .header__label span::before {
+  top: 0;
+  transform: rotate(0);
+}
+.header__input:checked ~ .header__label span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.header__input:checked ~ .header__list {
+  display: flex;
+  justify-content: column;
+}
+@media screen and (max-width: 480px) {
+  .header__label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 0;
+  }
+  .header__label span {
+    top: 15px;
+  }
+  .header__label span, .header__label span::before, .header__label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__label span::before {
+    top: -8px;
+  }
+  .header__label span::after {
+    top: 8px;
+  }
+}
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .header__list {
+    display: none;
+  }
+}
+.header__link {
+  font-family: "DM+Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
 }

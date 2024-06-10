@@ -1,34 +1,142 @@
+@import '../base/variables.scss';
+
 .header {
+  // .header__container
+  background-color: $darkGreyColor;
+  margin-bottom: 100px;
 
-    // .header__container
+  &__container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    &__container {
-    }
+  // .header__logo
 
-    // .header__logo
+  &__logo {
+    display: flex;
+    gap: 5px;
+  }
 
-    &__logo {
-    }
+  // .header__title
 
-    // .header__title
+  &__title {
+    margin-top: 6px;
+    font-family: $mainFontFamily;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 118%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+  }
 
-    &__title {
-    }
+  // .header__nav
 
-    // .header__list
+  &__nav {
+  }
 
-    &__list {
-    }
+  &__input,
+  &__label {
+    display: none;
+  }
 
-    // .header__item
+  // .header__input
 
-    &__item {
-    }
-
-    // .header__link
-
-    &__link {
+  &__input {
+    &:checked {
+      ~ .header__label {
+        span {
+          transform: rotate(-45deg);
+          &::before {
+            top: 0;
+            transform: rotate(0);
+          }
+          &::after {
+            top: 0;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      ~ .header__list {
+        
     }
 }
-.container {
+      }
+    }
+  }
+
+  // .header__label
+
+  &__label {
+    @media screen and (max-width: $mobile) {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      margin-left: 0;
+      span {
+        top: 15px;
+        &,
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 25px;
+          height: 2px;
+          background-color: white;
+          position: absolute;
+          right: 0;
+          transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+          top: -8px;
+        }
+
+        &::after {
+          top: 8px;
+        }
+      }
+    }
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 10px;
+    @media screen and (max-width: $mobile) {
+      display: none;
+      
+    }
+  }
+
+  // .header__item
+
+  &__item {
+  }
+
+  // .header__link
+
+  &__link {
+    font-family: $mainFontFamily;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 118%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+  }
+
+  // .header__underline
+
+  // &__underline {
+  //     margin-bottom: 50px;
+  //     width: 100%;
+  //     stroke-width: 1px;
+  //     stroke: rgba(246, 245, 239, 0.2);
+  // }
 }
