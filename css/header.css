@@ -35,10 +35,6 @@
   top: 0;
   transform: rotate(90deg);
 }
-.header__input:checked ~ .header__list {
-  display: flex;
-  justify-content: column;
-}
 @media screen and (max-width: 480px) {
   .header__label {
     display: block;

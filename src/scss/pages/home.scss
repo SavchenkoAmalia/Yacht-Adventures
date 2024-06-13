@@ -1,0 +1,50 @@
+//! Indruction Home
+
+.introduction-home {
+  background-color: $darkGreyColor;
+
+  // .introduction-home__container
+
+  &__container {
+  }
+
+  // .introduction-home__wrapper
+
+  &__wrapper {
+  }
+
+  // .introduction-home__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    background-color: $whiteColor;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  // .introduction-home__grey
+
+  &__grey {
+    font-style: italic;
+    color: gray;
+  }
+
+  // .introduction-home__white
+
+  &__white {
+  }
+
+  // .introduction-home__list
+
+  &__list {
+  }
+
+  // .introduction-home__item
+
+  &__item {
+  }
+}
