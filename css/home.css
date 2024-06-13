@@ -1,5 +1,6 @@
 .introduction-home {
   background-color: #1F212D;
+<<<<<<< Updated upstream
 }
 .introduction-home__title {
   font-family: "DM+Sans", sans-serif;
@@ -12,4 +13,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+=======
+>>>>>>> Stashed changes
 }
