@@ -312,6 +312,118 @@ body {
   color: #fff;
 }
 
+.dream-home {
+  background-color: #1F212D;
+}
+.dream-home__wrapper {
+  padding-bottom: 500px;
+}
+.dream-home__list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.dream-home__item {
+  position: relative;
+  z-index: 0;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.dream-home__item:nth-child(1) {
+  margin-left: 350px;
+}
+.dream-home__item:nth-child(2) {
+  margin-top: -250px;
+}
+@media screen and (max-width: 768px) {
+  .dream-home__item:nth-child(1) {
+    margin-left: 0;
+  }
+  .dream-home__item:nth-child(2) {
+    margin-top: 0;
+  }
+  .dream-home__item:nth-child(3) {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dream-home__item:nth-child(1) {
+    margin-left: 0;
+    content: url("/src/images/yaht1-formobile.png");
+  }
+  .dream-home__item:nth-child(2) {
+    margin-top: 0;
+  }
+  .dream-home__item:nth-child(3) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+}
+.dream-home__together {
+  position: absolute;
+  z-index: 1;
+  margin-top: -150px;
+  margin-left: 150px;
+}
+@media screen and (max-width: 768px) {
+  .dream-home__together {
+    margin-top: -100px;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dream-home__together {
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+}
+.dream-home__title {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #fff;
+  max-width: 880px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .dream-home__title {
+    font-size: 70px;
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dream-home__title {
+    font-size: 36px;
+    max-width: 310px;
+  }
+}
+.dream-home__elipse {
+  border-radius: 100%;
+  fill: #91afba;
+  filter: blur(200px);
+  z-index: 0;
+}
+.dream-home__button {
+  border: 1px solid #fff;
+  border-radius: 60px;
+  padding: 14px 28px;
+  width: 153px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+.dream-home__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
 .introduction-home {
   background-color: #1F212D;
 }
@@ -329,6 +441,12 @@ body {
   -webkit-text-fill-color: transparent;
   max-width: 514px;
   padding-top: 100px;
+}
+@media screen and (max-width: 480px) {
+  .introduction-home__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 .introduction-home__grey {
   font-style: italic;
@@ -349,4 +467,9 @@ body {
   letter-spacing: -0.02em;
   color: #fff;
   max-width: 180px;
+}
+@media screen and (max-width: 480px) {
+  .introduction-home__item {
+    font-size: 14px;
+  }
 }
