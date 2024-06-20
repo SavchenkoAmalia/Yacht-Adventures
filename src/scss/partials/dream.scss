@@ -48,7 +48,13 @@
     @media screen and (max-width: $mobile) {
       &:nth-child(1) {
         margin-left: 0;
-        content: url('/src/images/yaht1-formobile.png');
+        content: url('/src/images/yaht1.formobile-mobile@1x.png');
+        width: 95%;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+          content: url('/src/images/yaht1.formobile-mobile@2x.png');
+        }
       }
       &:nth-child(2) {
         margin-top: 0;
@@ -119,6 +125,11 @@
     height: 48px;
     display: flex;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover {
+      background-color: #a6bbb9;
+      cursor: pointer;
+    }
   }
 
   // .dream-home__link
