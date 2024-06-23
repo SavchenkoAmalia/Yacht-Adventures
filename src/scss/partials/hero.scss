@@ -13,6 +13,19 @@
   &__card {
   }
 
+  // .hero-home__background
+
+  &__background {
+    
+  }
+
+  // .hero-home__clients
+
+  &__clients {
+    display: flex;
+    gap: 20px;
+  }
+
   // .hero-home__client1
 
   &__client1 {

@@ -1,6 +1,10 @@
 .hero-home {
   background-color: #1F212D;
 }
+.hero-home__clients {
+  display: flex;
+  gap: 20px;
+}
 .hero-home__cltext {
   font-family: "DM+Sans", sans-serif;
   font-weight: 700;
