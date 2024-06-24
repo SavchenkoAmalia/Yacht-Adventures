@@ -11,10 +11,10 @@
   // .hero-home__card
 
   &__card {
-    background-image: url("/src/images/Rectangle_deckstop@1x\ \(2\).png");
+    background-image: url('/src/images/Rectangle_deckstop@1x\ \(2\).png');
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: contain  ;
+    background-size: contain;
     width: 426px;
     height: 598px;
     position: relative;
@@ -95,7 +95,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 14px;
-    
+
     color: $darkColor;
     position: absolute;
     top: 468px;
@@ -129,6 +129,8 @@
   // .hero-home__cta
 
   &__cta {
+
+    dis
     // .hero-home__cta-title
 
     &-title {
