@@ -228,7 +228,6 @@ body {
 }
 .header {
   background-color: #1F212D;
-  margin-bottom: 100px;
 }
 .header__container {
   padding: 30px;
@@ -322,6 +321,16 @@ body {
 
 .hero-home {
   background-color: #1F212D;
+}
+.hero-home__background {
+  position: relative;
+  top: 151px;
+  left: 31px;
+}
+.hero-home__client1 {
+  position: absolute;
+  top: 183px;
+  left: 64px;
 }
 .hero-home__cltext {
   font-family: "DM+Sans", sans-serif;

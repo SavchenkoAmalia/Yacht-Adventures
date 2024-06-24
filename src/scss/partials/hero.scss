@@ -16,19 +16,23 @@
   // .hero-home__background
 
   &__background {
-    
+    position: relative;
+    top: 151px;
+    left: 31px;
   }
 
   // .hero-home__clients
 
   &__clients {
-    display: flex;
-    gap: 20px;
+   
   }
 
   // .hero-home__client1
 
   &__client1 {
+    position: absolute;
+    top: 183px;
+    left: 64px;
   }
 
   // .hero-home__client2
