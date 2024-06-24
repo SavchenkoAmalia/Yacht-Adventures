@@ -45,7 +45,7 @@
        margin-top: 200px;
       }
     }
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 680px) {
       &:nth-child(1) {
         margin-left: 0;
         content: url('/src/images/yaht1.formobile-mobile@1x.png');
