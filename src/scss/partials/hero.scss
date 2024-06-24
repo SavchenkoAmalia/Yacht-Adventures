@@ -11,6 +11,14 @@
   // .hero-home__card
 
   &__card {
+    background-image: url("/src/images/Rectangle_deckstop@1x\ \(2\).png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain  ;
+    width: 426px;
+    height: 598px;
+    position: relative;
+    padding: 32px;
   }
 
   // .hero-home__background
@@ -24,6 +32,9 @@
   // .hero-home__clients
 
   &__clients {
+    position: absolute;
+    top: 32px;
+    left: 32px;
   }
 
   // .hero-home__client1
@@ -59,21 +70,36 @@
   // .hero-home__Yacht
 
   &__Yacht {
+    position: absolute;
+    top: 225px;
+    left: 24px;
   }
 
   // .hero-home__man
 
   &__man {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    object-fit: cover;
+    // width: 200px;
+    // height: 200px;
+    // border-radius: 20px;
+    // object-fit: cover;
+    position: absolute;
+    top: 32px;
+    left: 305px;
   }
 
   // .hero-home__informations
 
   &__informations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    
     color: $darkColor;
+    position: absolute;
+    top: 468px;
+    left: 32px;
   }
 
   // .hero-home__price
@@ -85,6 +111,7 @@
     line-height: 110%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
+    margin: 0;
   }
 
   // .hero-home__information
@@ -95,6 +122,8 @@
     font-size: 18px;
     line-height: 110%;
     letter-spacing: -0.04em;
+    padding-right: 30px;
+    margin: 0;
   }
 
   // .hero-home__cta

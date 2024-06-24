@@ -1,10 +1,25 @@
 .hero-home {
   background-color: #1F212D;
 }
+.hero-home__card {
+  background-image: url("/src/images/Rectangle_deckstop@1x (2).png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 426px;
+  height: 598px;
+  position: relative;
+  padding: 32px;
+}
 .hero-home__background {
   position: relative;
   top: 151px;
   left: 31px;
+}
+.hero-home__clients {
+  position: absolute;
+  top: 32px;
+  left: 32px;
 }
 .hero-home__cltext {
   font-family: "DM+Sans", sans-serif;
@@ -15,15 +30,26 @@
   text-transform: uppercase;
   color: #11131F;
 }
+.hero-home__Yacht {
+  position: absolute;
+  top: 225px;
+  left: 24px;
+}
 .hero-home__man {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: absolute;
+  top: 32px;
+  left: 305px;
 }
 .hero-home__informations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
   color: #11131F;
+  position: absolute;
+  top: 468px;
+  left: 32px;
 }
 .hero-home__price {
   font-family: "DM+Sans", sans-serif;
@@ -32,6 +58,7 @@
   line-height: 110%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  margin: 0;
 }
 .hero-home__information {
   font-family: "DM+Sans", sans-serif;
@@ -39,6 +66,8 @@
   font-size: 18px;
   line-height: 110%;
   letter-spacing: -0.04em;
+  padding-right: 30px;
+  margin: 0;
 }
 .hero-home__cta-title {
   font-family: "DM+Sans", sans-serif;
