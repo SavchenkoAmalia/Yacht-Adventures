@@ -1,0 +1,166 @@
+@import '../base/variables.scss';
+
+.hero-home {
+  background-color: $darkGreyColor;
+
+  // .hero-home__container
+
+  &__container {
+  }
+
+  // .hero-home__card
+
+  &__card {
+  }
+
+  // .hero-home__background
+
+  &__background {
+    position: relative;
+    top: 151px;
+    left: 31px;
+  }
+
+  // .hero-home__clients
+
+  &__clients {
+  }
+
+  // .hero-home__client1
+
+  &__client1 {
+    // position: absolute;
+    // top: 183px;
+    // left: 64px;
+  }
+
+  // .hero-home__client2
+
+  &__client2 {
+  }
+
+  // .hero-home__client3
+
+  &__client3 {
+  }
+
+  // .hero-home__cltext
+
+  &__cltext {
+    font-family: $mainFontFamily;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $darkColor;
+  }
+
+  // .hero-home__Yacht
+
+  &__Yacht {
+  }
+
+  // .hero-home__man
+
+  &__man {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  // .hero-home__informations
+
+  &__informations {
+    color: $darkColor;
+  }
+
+  // .hero-home__price
+
+  &__price {
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+
+  // .hero-home__information
+
+  &__information {
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+  }
+
+  // .hero-home__cta
+
+  &__cta {
+    // .hero-home__cta-title
+
+    &-title {
+      font-family: $mainFontFamily;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 110%;
+      letter-spacing: -0.04em;
+      color: $whiteColor;
+    }
+
+    // .hero-home__cta-ptitle
+
+    &-ptitle {
+      font-style: italic;
+      background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    // .hero-home__cta-text
+
+    &-text {
+      font-family: $mainFontFamily;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.02em;
+      color: $whiteColor;
+    }
+
+    // .hero-home__cta-buttons
+
+    &-buttons {
+      border: 1px solid $whiteColor;
+      border-radius: 60px;
+      padding: 14px 28px;
+      width: 153px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      &:hover {
+        background-color: #a6bbb9;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .cta__button
+
+  &__button {
+    // .cta__button-
+
+    &- {
+    }
+
+    // .cta__button-
+
+    &- {
+    }
+  }
+}
