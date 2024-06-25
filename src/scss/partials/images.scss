@@ -25,89 +25,70 @@
   // .images-home__item
 
   &__item {
-    position: relative;
-    z-index: 0;
-
     &:nth-child(1) img {
-      width: 712px;
-      height: 632px;
+      width: 612px;
+      height: 532px;
     }
     &:nth-child(2) img {
-        margin-top: 200px;
-      width: 440px;
-      height: 428px;
+      width: 340px;
+      height: 328px;
     }
     &:nth-child(3) img {
-        margin-left: 300px;
-      width: 436px;
-      height: 352px;
+      width: 336px;
+      height: 252px;
     }
-    &:nth-child(1) button {
-        margin-top: 540px;
-        margin-left: -650px;
-      }
-      &:nth-child(2) button {
-        margin-top: 540px;
-        margin-left: -380px;
-      }
+
     &:nth-child(3) button {
       width: 148px;
       height: 48px;
-      margin-top: 260px;
-      margin-left: -380px;
     }
-    @media screen and (max-width: $tablet) {
-      &:nth-child(2) img {
-        margin-top: 0;
-        margin-left: 230px;
-    }
-    &:nth-child(2) button {
-      margin-top: 340px;
-      margin-left: -380px;
-    }
-    &:nth-child(3) img {
-      margin-left: 0;
-    width: 436px;
-    height: 352px;
+    //   @media screen and (max-width: $tablet) {
+    //     &:nth-child(2) img {
+    //       margin-top: 0;
+    //       margin-left: 230px;
+    //   }
+    //   &:nth-child(2) button {
+    //     margin-top: 340px;
+    //     margin-left: -380px;
+    //   }
+    //   &:nth-child(3) img {
+    //     margin-left: 0;
+    //   width: 436px;
+    //   height: 352px;
+    // }
   }
-    }
-    @media screen and (max-width: $tablet){
-      &:nth-child(2) img {
-        width: 712px;
-        height: 632px;
-    }
-    &:nth-child(3) img {
-      width: 712px;
-      height: 632px;
-    }
-    }
-  }
+}
 
-  // .images-home__img
+// .images-home__img
 
-  &__img {
-    padding: 20px;
-    }
+&__img {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
 
-  // .images-home__button
+// .images-home__button
 
-  &__button {
-    border-radius: 60px;
-    padding: 14px 28px;
-    width: 106px;
-    height: 48px;
-    background-color: $whiteColor;
-    position: absolute;
-    z-index: 1;
-  }
+&__button {
+  border-radius: 60px;
+  padding: 14px 28px;
+  width: 106px;
+  height: 48px;
+  background-color: $whiteColor;
+  position: absolute;
+  z-index: 1;
+  bottom: 32px;
+  left: 32px;
+}
 
-  // .images-home__link
+// .images-home__link
 
-  &__link {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 110%;
-    letter-spacing: -0.04em;
-    color: $darkColor;
-  }
+&__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: $darkColor;
 }

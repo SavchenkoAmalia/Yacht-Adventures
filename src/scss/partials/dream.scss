@@ -95,6 +95,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    // background-image: url('/src/images/Ellipse-for-dream.png');
     @media screen and (max-width: $tablet) {
       font-size: 70px;
       max-width: 650px;
@@ -103,7 +104,6 @@
       font-size: 36px;
       max-width: 310px;
     }
-    
   }
 
   // .dream-home__elipse
