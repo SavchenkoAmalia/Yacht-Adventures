@@ -76,6 +76,7 @@ dis .hero-home__cta-title {
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #fff;
+  max-width: 42%;
 }
 .hero-home__cta-ptitle {
   font-style: italic;
@@ -91,6 +92,7 @@ dis .hero-home__cta-title {
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 40%;
 }
 .hero-home__cta-buttons {
   border: 1px solid #fff;
@@ -99,6 +101,7 @@ dis .hero-home__cta-title {
   width: 153px;
   height: 48px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
