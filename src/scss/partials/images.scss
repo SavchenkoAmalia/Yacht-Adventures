@@ -6,12 +6,13 @@
   // .images-home__container
 
    &__container{
+    width: 100%;
   }
 
   // .images-home__wrapper
 
   &__wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   // .images-home__list
@@ -20,53 +21,69 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
   }
 
   // .images-home__item
 
   &__item {
-    &:nth-child(1) img {
+    position: relative;
+    &:nth-child(1)  {
       width: 612px;
-      height: 532px;
     }
-    &:nth-child(2) img {
-      width: 340px;
-      height: 328px;
+    &:nth-child(2) {
+      width: 390px;
+      height: 378px;
+      top: 150px;
     }
-    &:nth-child(3) img {
-      width: 336px;
-      height: 252px;
+    &:nth-child(3) {
+      width: 326px;
+      height: 292px;
+      left: 330px;
+    }
+    @media screen and (max-width: 1120px) {
+      &:nth-child(1)  {
+        left: 110px;
+      }
+      &:nth-child(2) {
+        top: 0;
+      }
+      &:nth-child(3) {
+        left: 0;
+      }
     }
 
-    &:nth-child(3) button {
-      width: 148px;
-      height: 48px;
-    }
-    //   @media screen and (max-width: $tablet) {
-    //     &:nth-child(2) img {
-    //       margin-top: 0;
-    //       margin-left: 230px;
-    //   }
-    //   &:nth-child(2) button {
-    //     margin-top: 340px;
-    //     margin-left: -380px;
-    //   }
-    //   &:nth-child(3) img {
-    //     margin-left: 0;
-    //   width: 436px;
-    //   height: 352px;
-    // }
+    @media screen and (max-width: $tablet) {
+      &:nth-child(1)  {
+        left: 0;
+      }
+      &:nth-child(2) {
+        left: 200px;
+      }
   }
-}
+
+  @media screen and (max-width: 660px){
+    &:nth-child(1)  {
+      width: 326px;
+    }
+    &:nth-child(2) {
+      width: 326px;
+      height: 292px;
+      left: 0;
+    }
+  }
+
+  }
 
 // .images-home__img
 
 &__img {
-  padding: 20px;
   max-width: 100%;
-  height: auto;
-  position: relative;
+  height: 100%;
+  width: 100%;
   z-index: 0;
+  object-fit: cover;
+  border-radius: 10%;
 }
 
 // .images-home__button
@@ -74,13 +91,11 @@
 &__button {
   border-radius: 60px;
   padding: 14px 28px;
-  width: 106px;
-  height: 48px;
   background-color: $whiteColor;
   position: absolute;
   z-index: 1;
-  bottom: 32px;
   left: 32px;
+  bottom: 32px;
 }
 
 // .images-home__link
@@ -91,4 +106,5 @@
   line-height: 110%;
   letter-spacing: -0.04em;
   color: $darkColor;
+}
 }
