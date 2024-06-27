@@ -1,6 +1,11 @@
 .hero-home {
   background-color: #1F212D;
 }
+.hero-home__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .hero-home__card {
   background-image: url("/src/images/Rectangle_deckstop@1x (2).png");
   background-position: 0 0;
