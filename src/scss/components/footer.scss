@@ -1,16 +1,27 @@
 .footer {
   background-color: $darkGreyColor;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  position: relative;
 
   // .footer__container
 
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
   }
+
 
   // .footer__left
 
   &__left {
+    margin-bottom: 40px;
   }
 
   // .footer__logo
@@ -36,6 +47,7 @@
   // .footer__nav
 
   &__nav {
+    margin-bottom: 40px;
   }
 
   // .footer__list
@@ -45,6 +57,15 @@
     justify-content: flex-end;
     align-items: end;
     gap: 10px;
+    @media screen and (max-width: $tablet){
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+    @media screen and (max-width: $mobile){
+        align-items: start;
+        margin-left: -30px;
+    }
   }
 
   // .footer__item
@@ -68,6 +89,14 @@
   // .footer__right
 
   &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $mobile){
+        align-items: start;
+        justify-content: flex-start;
+    }
   }
 
   // .footer__text
@@ -86,10 +115,49 @@
   &__listr {
     display: flex;
     gap: 10px;
+    @media screen and (max-width: $mobile){
+        align-items: start;
+        margin-left: -30px;
+    }
   }
 
   // .footer__itemr
 
   &__itemr {
   }
+
+   // .footer__listb
+
+   &__listb {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    align-items: end;
+    gap: 10px;
+    z-index: 1;
+    @media screen and (max-width: $tablet){
+        left: 30%;
+    }
+    @media screen and (max-width: $mobile){
+        left: 10%;
+    }
+}
+
+// .footer__itemb
+
+&__itemb {
+}
+
+// .footer__textb
+
+&__textb {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 118%;
+letter-spacing: 0.03em;
+text-align: center;
+color: rgba(246, 245, 239, 0.5);
+}
 }
