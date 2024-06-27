@@ -9,24 +9,21 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.images-home__item:nth-child(1) img {
+  width: 612px;
+  height: 532px;
+}
+.images-home__item:nth-child(2) img {
+  width: 340px;
+  height: 328px;
+}
+.images-home__item:nth-child(3) img {
+  width: 336px;
+  height: 252px;
+}
 .images-home__item:nth-child(3) button {
   width: 148px;
   height: 48px;
-}
-@media screen and (max-width: 768px) {
-  .images-home__item:nth-child(2) img {
-    margin-top: 0;
-    margin-left: 230px;
-  }
-  .images-home__item:nth-child(2) button {
-    margin-top: 340px;
-    margin-left: -380px;
-  }
-  .images-home__item:nth-child(3) img {
-    margin-left: 0;
-    width: 436px;
-    height: 352px;
-  }
 }
 .images-home__img {
   padding: 20px;
