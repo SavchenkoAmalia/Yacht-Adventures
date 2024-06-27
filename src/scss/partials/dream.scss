@@ -86,6 +86,7 @@
   // .dream-home__title
 
   &__title {
+    z-index: 1;
     font-weight: 500;
     font-size: 100px;
     line-height: 110%;
@@ -96,6 +97,8 @@
     justify-content: center;
     margin-bottom: 30px;
     // background-image: url('/src/images/Ellipse-for-dream.png');
+    // background-repeat: no-repeat;
+    
     @media screen and (max-width: $tablet) {
       font-size: 70px;
       max-width: 650px;
@@ -108,12 +111,12 @@
 
   // .dream-home__elipse
 
-  &__elipse {
-    border-radius: 100%;
-    fill: #91afba;
-    filter: blur(200px);
-    z-index: 0;
-  }
+  // &__elipse {
+  //   border-radius: 100%;
+  //   fill: #91afba;
+  //   filter: blur(200px);
+  //   z-index: 0;
+  // }
 
   // .dream-home__button
 
@@ -130,6 +133,8 @@
       background-color: #a6bbb9;
       cursor: pointer;
     }
+    position: absolute;
+    z-index: 1;
   }
 
   // .dream-home__link
