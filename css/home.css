@@ -74,14 +74,16 @@
   padding-right: 30px;
   margin: 0;
 }
-dis .hero-home__cta-title {
+.hero-home__cta {
+  max-width: 500px;
+}
+.hero-home__cta-title {
   font-family: "DM+Sans", sans-serif;
   font-weight: 500;
   font-size: 60px;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #fff;
-  max-width: 42%;
 }
 .hero-home__cta-ptitle {
   font-style: italic;
@@ -97,7 +99,6 @@ dis .hero-home__cta-title {
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #fff;
-  max-width: 40%;
 }
 .hero-home__cta-buttons {
   border: 1px solid #fff;

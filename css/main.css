@@ -184,7 +184,9 @@ body {
 
 .footer {
   background-color: #1F212D;
-  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  position: relative;
 }
 .footer__container {
   display: flex;
@@ -486,7 +488,6 @@ body {
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #fff;
-  max-width: 42%;
 }
 .hero-home__cta-ptitle {
   font-style: italic;
@@ -502,7 +503,6 @@ body {
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #fff;
-  max-width: 40%;
 }
 .hero-home__cta-buttons {
   border: 1px solid #fff;
@@ -512,16 +512,12 @@ body {
   height: 48px;
   display: flex;
   flex-direction: row;
-  flex-direction: row;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .hero-home__cta-buttons:hover {
   background-color: #a6bbb9;
   cursor: pointer;
-}
-.cards-home {
-  background-color: #1F212D;
 }
 .cards-home {
   background-color: #1F212D;
@@ -675,6 +671,9 @@ body {
 .introduction-home__grey {
   font-style: italic;
   background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .introduction-home__white {
   color: #fff;
@@ -716,21 +715,47 @@ body {
 .images-home__item {
   position: relative;
 }
-.images-home__item:nth-child(1) img {
+.images-home__item:nth-child(1) {
   width: 612px;
-  height: 532px;
 }
-.images-home__item:nth-child(2) img {
-  width: 340px;
-  height: 328px;
+.images-home__item:nth-child(2) {
+  width: 390px;
+  height: 378px;
+  top: 150px;
 }
-.images-home__item:nth-child(3) img {
-  width: 336px;
-  height: 252px;
+.images-home__item:nth-child(3) {
+  width: 326px;
+  height: 292px;
+  left: 330px;
 }
-.images-home__item:nth-child(3) button {
-  width: 148px;
-  height: 48px;
+@media screen and (max-width: 1120px) {
+  .images-home__item:nth-child(1) {
+    left: 110px;
+  }
+  .images-home__item:nth-child(2) {
+    top: 0;
+  }
+  .images-home__item:nth-child(3) {
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .images-home__item:nth-child(1) {
+    left: 0;
+  }
+  .images-home__item:nth-child(2) {
+    left: 200px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .images-home__item:nth-child(1) {
+    width: 326px;
+  }
+  .images-home__item:nth-child(2) {
+    width: 326px;
+    height: 292px;
+    left: 0;
+  }
 }
 .images-home__img {
   max-width: 100%;
