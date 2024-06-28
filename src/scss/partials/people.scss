@@ -1,0 +1,109 @@
+.people-home {
+  background-color: $darkGreyColor;
+
+  // .people-home__container
+
+  &__container {
+  }
+
+  // .people-home__wrapper
+
+  &__wrapper {
+    padding-bottom: 100px;
+  }
+
+  // .people-home__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+  }
+
+  // .people-home__title
+
+  &__title {
+    max-width: 500px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+  }
+
+  // .people-home__grey
+
+  &__grey {
+    font-style: italic;
+    background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  // .people-home__white
+
+  &__white {
+    color: $whiteColor;
+  }
+
+  // .people-home__text
+
+  &__text {
+    max-width: 275px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $whiteColor;
+  }
+
+  // .people-home__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  // .people-home__item
+
+  &__item {
+    border-radius: 24px;
+    padding: 32px;
+    width: 384px;
+    height: 282px;
+    background-color: #292c36;
+  }
+
+  // .people-home__img
+
+  &__img {
+    padding-bottom: 15px;
+    margin-left: 130px;
+}
+
+
+  // .people-home__name
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: $whiteColor;
+  }
+
+  // .people-home__description
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(246, 245, 239, 0.5);
+  }
+}
