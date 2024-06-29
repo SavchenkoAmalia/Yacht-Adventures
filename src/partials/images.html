@@ -1,26 +1,108 @@
 <section class="home__images images-home">
-    <div class="images-home__container container">
-        <div class="images-home__wrapper">
-            <ul class="images-home__list">
-                <li class="images-home__item">
-                    <img src="./images/diving.png" alt="" class="images-home__img">
-                    <button class="images-home__button">
-                        <a href="#" class="images-home__link">Diving</a>
-                    </button>
-                </li>
-                <li class="images-home__item">
-                    <img src="./images/fishing.png" alt="" class="images-home__img">
-                    <button class="images-home__button">
-                        <a href="#" class="images-home__link">Fishing</a>
-                    </button>
-                </li>
-                <li class="images-home__item">
-                    <img src="./images/sunbathing.png" alt="" class="images-home__img">
-                    <button class="images-home__button">
-                        <a href="#" class="images-home__link">Sunbathing</a>
-                    </button>
-                </li>
-            </ul>
-        </div>
+  <div class="images-home__container container">
+    <div class="images-home__wrapper">
+      <ul class="images-home__list">
+        <li class="images-home__item">
+          <picture>
+            <source
+              srcset="
+                ./images/diving-desktop@1x.png 1x,
+                ./images/diving-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/diving-tablet@1x.png 1x,
+                ./images/diving-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/diving-mobile@1x.png 1x,
+                ./images/diving-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="images-home__img"
+              src="./images/diving-desktop@1x.png"
+              alt="diving"
+            />
+          </picture>
+          <button class="images-home__button">
+            <a href="#" class="images-home__link">Diving</a>
+          </button>
+        </li>
+        <li class="images-home__item">
+          <picture>
+            <source
+              srcset="
+                ./images/fishing-desktop@1x.png 1x,
+                ./images/fishing-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/fishing-tablet@1x.png 1x,
+                ./images/fishing-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/fishing-mobile@1x.png 1x,
+                ./images/fishing-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="images-home__img"
+              src="./images/fishing-desktop@1x.png"
+              alt="fishing"
+            />
+          </picture>
+          <button class="images-home__button">
+            <a href="#" class="images-home__link">Fishing</a>
+          </button>
+        </li>
+        <li class="images-home__item">
+          <!-- <img src="./images/sunbathing.png" alt="" class="images-home__img" /> -->
+          <picture>
+            <source
+              srcset="
+                ./images/sunbathing-desktop@1x.png 1x,
+                ./images/sunbathing-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/sunbathing-tablet@1x.png 1x,
+                ./images/sunbathing-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/sunbathing-mobile@1x.png 1x,
+                ./images/sunbathing-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="images-home__img"
+              src="./images/sunbathing-desktop@1x.png"
+              alt="sunbathing"
+            />
+          </picture>
+          <button class="images-home__button">
+            <a href="#" class="images-home__link">Sunbathing</a>
+          </button>
+        </li>
+      </ul>
     </div>
+  </div>
 </section>

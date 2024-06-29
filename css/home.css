@@ -392,6 +392,7 @@
 .people-home__top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 65px;
 }
 .people-home__title {
@@ -425,6 +426,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 70px;
 }
 .people-home__item {
   border-radius: 24px;
@@ -452,4 +454,15 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(246, 245, 239, 0.5);
+}
+.people-home__bottom {
+  display: flex;
+  justify-content: end;
+}
+.people-home__button {
+  border-radius: 8px;
+  background-color: #93ABAE;
+}
+.people-home__arrow {
+  padding: 19px 26px;
 }
