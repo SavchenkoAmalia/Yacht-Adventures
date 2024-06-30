@@ -558,12 +558,38 @@
   letter-spacing: -0.02em;
   color: #fff;
 }
+.people-home__slides input {
+  position: absolute;
+  visibility: hidden;
+}
+.people-home__nav {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .people-home__nav {
+    display: block;
+    position: absolute;
+    left: 45%;
+  }
+}
+.people-home__bar {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #2c2f3e;
+  border-radius: 70px;
+  transition: all 0.4s ease;
+}
+.people-home__bar:hover {
+  background-color: #93abae;
+  transform: scale(1.1);
+}
 .people-home__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 70px;
 }
 .people-home__item {
   border-radius: 24px;
@@ -595,6 +621,7 @@
 .people-home__bottom {
   display: flex;
   justify-content: end;
+  padding-top: 70px;
 }
 .people-home__button {
   border-radius: 8px;
