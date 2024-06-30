@@ -10,12 +10,24 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 50px;
     @media screen and (max-width: $mobile){
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
   }
+
+   // .footer__underline
+
+   &__underline {
+    width: 100%;
+    stroke-width: 1px;
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.2);
+    position: absolute;
+    top: 0;
+}
 
 
   // .footer__left
@@ -96,6 +108,9 @@
     @media screen and (max-width: $mobile){
         align-items: start;
         justify-content: flex-start;
+    }
+    @media screen and (max-width: $tablet){
+      margin-top: -50px;
     }
   }
 

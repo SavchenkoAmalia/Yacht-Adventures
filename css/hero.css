@@ -1,5 +1,6 @@
 .hero-home {
   background-color: #1F212D;
+  padding-top: 50px;
 }
 .hero-home__container {
   display: flex;

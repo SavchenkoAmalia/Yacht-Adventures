@@ -5,6 +5,7 @@
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo {
   display: flex;
@@ -89,4 +90,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+}
+.header__underline {
+  width: 100%;
+  stroke-width: 1px;
+  height: 1px;
+  background-color: rgba(246, 245, 239, 0.2);
+  position: absolute;
+  bottom: 0;
 }

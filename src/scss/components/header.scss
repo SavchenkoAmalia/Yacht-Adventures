@@ -8,6 +8,7 @@
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   // .header__logo
@@ -133,13 +134,14 @@
 
   // .header__underline
 
-  // &__underline {
-  //     margin-bottom: 50px;
-  //     margin-right: 100px;
-  //     width: 100%;
-  //     stroke-width: 1px;
-  //     stroke: rgba(246, 245, 239, 0.2);
-  // }
+  &__underline {
+      width: 100%;
+      stroke-width: 1px;
+      height: 1px;
+      background-color: rgba(246, 245, 239, 0.2);
+      position: absolute;
+      bottom: 0;
+  }
 
 
     }

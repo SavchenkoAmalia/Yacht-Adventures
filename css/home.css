@@ -1,5 +1,6 @@
 .hero-home {
   background-color: #1F212D;
+  padding-top: 50px;
 }
 .hero-home__container {
   display: flex;
@@ -602,7 +603,7 @@
   background-color: #1F212D;
 }
 .people-home__wrapper {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .people-home__top {
   display: flex;
