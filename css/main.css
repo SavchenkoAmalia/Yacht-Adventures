@@ -202,7 +202,7 @@ body {
   }
 }
 .footer__underline {
-  width: 100%;
+  width: 90%;
   stroke-width: 1px;
   height: 1px;
   background-color: rgba(246, 245, 239, 0.2);
@@ -417,7 +417,7 @@ body {
   color: #fff;
 }
 .header__underline {
-  width: 100%;
+  width: 90%;
   stroke-width: 1px;
   height: 1px;
   background-color: rgba(246, 245, 239, 0.2);
@@ -1030,6 +1030,7 @@ body {
   background-color: #1F212D;
 }
 .people-home__wrapper {
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 .people-home__top {
