@@ -346,48 +346,6 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
-.header__input, .header__label {
-  display: none;
-}
-.header__input:checked ~ .header__label span {
-  transform: rotate(-45deg);
-}
-.header__input:checked ~ .header__label span::before {
-  top: 0;
-  transform: rotate(0);
-}
-.header__input:checked ~ .header__label span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-@media screen and (max-width: 480px) {
-  .header__label {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    margin-left: 0;
-  }
-  .header__label span {
-    top: 15px;
-  }
-  .header__label span, .header__label span::before, .header__label span::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    right: 0;
-    transition: all 0.3s ease 0s;
-  }
-  .header__label span::before {
-    top: -8px;
-  }
-  .header__label span::after {
-    top: 8px;
-  }
-}
 .header__list {
   display: flex;
   justify-content: flex-end;
@@ -452,7 +410,7 @@ body {
   position: relative;
   padding: 32px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__card {
     width: 335px;
     height: 427px;
@@ -485,7 +443,7 @@ body {
   top: 225px;
   left: 24px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__Yacht {
     width: 287px;
     height: 167px;
@@ -498,7 +456,7 @@ body {
   top: 32px;
   left: 305px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__man {
     width: 133px;
     height: 133px;
@@ -517,7 +475,7 @@ body {
   top: 468px;
   left: 32px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__informations {
     top: 340px;
     left: 20px;
@@ -532,7 +490,7 @@ body {
   text-transform: uppercase;
   margin: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__price {
     font-size: 48px;
   }
@@ -546,7 +504,7 @@ body {
   padding-right: 30px;
   margin: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__information {
     font-size: 14px;
   }
@@ -573,7 +531,7 @@ body {
     max-width: 700px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__ctitle {
     font-size: 36px;
     max-width: 335px;
@@ -594,7 +552,7 @@ body {
   letter-spacing: -0.02em;
   color: #fff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .hero-home__ctext {
     font-size: 14px;
     max-width: 335px;
@@ -1072,11 +1030,11 @@ body {
 .people-home__nav {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 845px) {
   .people-home__nav {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 47%;
   }
 }
 .people-home__bar {
@@ -1088,9 +1046,11 @@ body {
   border-radius: 70px;
   transition: all 0.4s ease;
 }
-.people-home__bar:hover {
-  background-color: #93abae;
-  transform: scale(1.1);
+@media screen and (max-width: 845px) {
+  .people-home__bar:nth-child(1) {
+    background-color: #93abae;
+    transform: scale(1.1);
+  }
 }
 .people-home__list {
   display: flex;
@@ -1104,6 +1064,14 @@ body {
   width: 384px;
   height: 282px;
   background-color: #292c36;
+}
+@media screen and (max-width: 845px) {
+  .people-home__item:nth-child(2) {
+    display: none;
+  }
+  .people-home__item:nth-child(3) {
+    display: none;
+  }
 }
 .people-home__img {
   padding-bottom: 15px;
