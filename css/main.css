@@ -917,9 +917,10 @@ body {
   font-size: 18px;
   padding: 14px 28px;
   margin-left: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .rent-home__button:hover {
-  background-color: #88B3B9;
+  background-color: #93ABAE;
   border: 1px solid black;
   color: #1f212d;
 }
