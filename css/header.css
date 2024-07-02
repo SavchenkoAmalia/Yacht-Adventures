@@ -45,7 +45,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  background-color: #3f51b5;
+  background-color: #1F212D;
   padding: 35px;
   transform: translateX(100%);
   transition: transform 0.3s ease 0s;
