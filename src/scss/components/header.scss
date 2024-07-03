@@ -42,20 +42,20 @@
     // .menu-toggle
 
     &-toggle {
-      min-width: 40px;
-      min-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-      background-color: transparent;
-      &:hover,
-      &:focus {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-      @media screen and (min-width: $tablet) {
-        display: none;
+      display: none;
+      @media screen and (max-width: $mobile) {
+        display: flex; // Показуємо SVG при ширині 480px або менше
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        min-height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+  
+        &:hover,
+        &:focus {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
       }
     }
   }
@@ -89,77 +89,21 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   z-index: 1000;
   background-color: $darkGreyColor;
   padding: 35px;
+  background-image: url('/src/images/elipse-menu.png');
+  background-repeat: no-repeat;
+  background-position: 25% -100%;
+  background-size: cover;
 
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 0.3s ease 0s;
   &.is-open {
     transform: translateX(0);
   }
 }
-
-//   &__input,
-//   &__label {
-//     display: none;
-//   }
-
-//   // .header__input
-
-//   &__input {
-//     &:checked {
-//       ~ .header__label {
-//         span {
-//           transform: rotate(-45deg);
-//           &::before {
-//             top: 0;
-//             transform: rotate(0);
-//           }
-//           &::after {
-//             top: 0;
-//             transform: rotate(90deg);
-//           }
-//         }
-//       }
-// }
-//       }
-
-//        // .header__label
-
-//   &__label {
-//     @media screen and (max-width: $mobile) {
-//       display: block;
-//       width: 30px;
-//       height: 30px;
-//       position: relative;
-//       margin-left: 0;
-//       span {
-//         top: 15px;
-//         &,
-//         &::before,
-//         &::after {
-//           content: '';
-//           display: block;
-//           width: 25px;
-//           height: 2px;
-//           background-color: white;
-//           position: absolute;
-//           right: 0;
-//           transition: all 0.3s ease 0s;
-//         }
-
-//         &::before {
-//           top: -8px;
-//         }
-
-//         &::after {
-//           top: 8px;
-//         }
-//       }
-//     }
-//   }
 
 // .header__list
 
@@ -168,9 +112,6 @@
   justify-content: flex-end;
   align-items: end;
   gap: 10px;
-  @media screen and (max-width: $mobile) {
-    display: none;
-  }
 }
 
 // .header__item
@@ -182,8 +123,10 @@
     cursor: pointer;
     border-radius: 4px;
   }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
-
 // .header__link
 
 &__link {
@@ -195,6 +138,7 @@
   text-transform: uppercase;
   color: $whiteColor;
 }
+
 
 // .header__underline
 
