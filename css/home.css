@@ -228,11 +228,9 @@
   gap: 30px;
 }
 .cards-home__card {
-  width: 354px;
-  height: 508px;
   background-color: #2c2f3e;
   border-radius: 5%;
-  padding: 20px;
+  padding: 20px 20px 25px 20px;
 }
 .cards-home__card:nth-child(2) .cards-home__top {
   gap: 50px;
@@ -256,6 +254,7 @@
   display: flex;
   justify-content: center;
   gap: 100px;
+  margin-bottom: 25px;
 }
 .cards-home__title {
   font-family: "DM+Sans", sans-serif;
@@ -742,7 +741,7 @@
 .people-home__nav {
   display: none;
 }
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 768px) {
   .people-home__nav {
     display: block;
     position: absolute;
@@ -777,11 +776,13 @@
   height: 282px;
   background-color: #292c36;
 }
-@media screen and (max-width: 845px) {
-  .people-home__item:nth-child(2) {
+@media screen and (max-width: 768px) {
+  .people-home:nth-child(2) {
     display: none;
   }
-  .people-home__item:nth-child(3) {
+}
+@media screen and (max-width: 480px) {
+  .people-home:nth-child(3) {
     display: none;
   }
 }

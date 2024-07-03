@@ -19,11 +19,9 @@
   // .cards-home__card
 
   &__card {
-    width: 354px;
-    height: 508px;
     background-color: #2c2f3e;
     border-radius: 5%;
-    padding: 20px;
+    padding: 20px 20px 25px 20px;
     &:nth-child(2) .cards-home__top {
         gap: 50px;
     }
@@ -54,6 +52,7 @@
     display: flex;
     justify-content: center;
     gap: 100px;
+    margin-bottom: 25px;
   }
 
   // .cards-home__title
