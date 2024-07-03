@@ -28,7 +28,7 @@
     @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          content: url('/src/images/rectangle-desktop@2x.png');
+          background-image: url('/src/images/rectangle-desktop@2x.png');
         }
     width: 426px;
     height: 598px;
@@ -98,7 +98,7 @@
 
   &__Yacht {
     position: absolute;
-    top: 225px;
+    top: 365px;
     left: 24px;
     @media screen and (max-width: 550px) {
       width: 287px;
@@ -240,6 +240,7 @@
     border: 1px solid $whiteColor;
     border-radius: 60px;
     padding: 14px 28px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:hover {
       color: #93abae;
       border-color: #93abae;
