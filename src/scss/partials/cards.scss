@@ -1,4 +1,6 @@
+@import '../base/variables.scss';
 .cards-home {
+ 
   background-color: $darkGreyColor;
 
   // .cards-home__container
@@ -14,6 +16,9 @@
     justify-content: center;
     flex-direction: row;
     gap: 30px;
+   
+
+
   }
 
   // .cards-home__card
@@ -25,6 +30,7 @@
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:nth-child(2) .cards-home__top {
       gap: 50px;
+      
     }
     @media screen and (max-width: $tablet) {
       &:nth-child(3) {

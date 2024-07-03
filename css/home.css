@@ -239,6 +239,7 @@
 }
 .cards-home__card:nth-child(2) .cards-home__top {
   gap: 50px;
+  transition-delay: 200ms;
 }
 @media screen and (max-width: 768px) {
   .cards-home__card:nth-child(3) {
