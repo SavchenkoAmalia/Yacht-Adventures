@@ -1,140 +1,132 @@
 @import '../base/variables.scss';
 .rent-home {
-    background-color: #1f212d;
-    display: flex;
-    gap: 188px;
-    flex-wrap: wrap;
-    padding-bottom: 164px;
-    padding: 0 32px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    font-family: 'DM Sans', sans-serif;
-    &__title {
-      font-size: 60px;
-      line-height: 110%;
-      letter-spacing: -0.04em;
-    }
-  &__image{ 
+  background-color: #1f212d;
+  display: flex;
+  gap: 188px;
+  flex-wrap: wrap;
+  padding-bottom: 164px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  &__title {
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+  }
+  &__image {
     max-width: 100%;
   }
-    &__block-title {
-      display: flex;
-      flex-direction: column;
-      gap: 64px;
-      max-width: 282px;
-      margin-left: 100px
-    }
-
-    &__button {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      border: 1px solid white;
-      border-radius: 60px;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      padding: 14px 28px;
-      margin-left: 30px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      &:hover {
-       background-color: #93ABAE;
-       border: 1px solid black;
-       color: #1f212d;
-      }
-    }
-  
-    &__input {
-  
-      border-bottom: 1px solid white;
-      padding-bottom: 16px;
-      letter-spacing: -0.04em;
-      line-height: 120%;
-      width: 443px;
-      color: white;
-    }
-  
-    &__input::placeholder {
-      line-height: 120%;
-      letter-spacing: -0.04em;
-      color: white;
-    }
-  
-    &__input-comments {
-        border-bottom: 1px solid white;
-      width: 443px;
-      letter-spacing: -0.04em;
-      line-height: 120%;
-      padding-bottom: 58px;
-      color: white;
-    }
-  
-    &__input-comments::placeholder {
-      letter-spacing: -0.04em;
-      line-height: 120%;
-      color: white;
-    }
-  
-    &__list {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      margin-bottom: 64px;
-      max-width: 63%;
-      padding-top: 10px;
-    }
-    &__item {
-        max-width: 100%; 
-    }
-
+  &__block-title {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 282px;
+    margin-left: 100px;
   }
-  
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-  
-    .rent-home {
+
+  &__button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 60px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 28px;
+    margin-left: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover {
+      background-color: #93abae;
+      border: 1px solid black;
+      color: #1f212d;
+    }
+  }
+
+  &__input {
+    border-bottom: 1px solid white;
+    padding-bottom: 16px;
+    letter-spacing: -0.04em;
+    line-height: 120%;
+    width: 443px;
+    color: white;
+  }
+
+  &__input::placeholder {
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: white;
+  }
+
+  &__input-comments {
+    border-bottom: 1px solid white;
+    width: 443px;
+    letter-spacing: -0.04em;
+    line-height: 120%;
+    padding-bottom: 58px;
+    color: white;
+  }
+
+  &__input-comments::placeholder {
+    letter-spacing: -0.04em;
+    line-height: 120%;
+    color: white;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 64px;
+    max-width: 63%;
+    padding-top: 10px;
+  }
+  &__item {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .rent-home {
     display: flex;
     gap: 69px;
     padding-bottom: 100px;
-        &__image { 
-           width: 271px;
-          }
-  
-  &__block-title {
-    width: 271px;
-    margin-left: 0;
+    &__image {
+      width: 271px;
+    }
+
+    &__block-title {
+      width: 271px;
+      margin-left: 0;
+    }
+    &__list {
+      width: 364px;
+    }
+    &__input {
+      width: 170%;
+    }
+
+    &__input-comments {
+      width: 170%;
+    }
   }
-  &__list {
-    width: 364px;
-  }
-      &__input {
-        width: 170%;
-      }
-  
-      &__input-comments {
-        width: 170%;
-      }
-      
-    
-  }
-  
+
   @media screen and (max-width: 480px) {
-  
     .rent-home {
       gap: 40px;
-      &__image{ 
+      &__image {
         width: 259px;
-        
       }
       &__block-title {
         margin-left: 35px;
-        
       }
-  
+
       &__title {
         font-size: 40px;
       }
-  
+
       &__input,
       &__input-comments {
         width: 335px;

@@ -16,7 +16,7 @@
   }
 }
 .hero-home__card {
-  background-image: url("/src/images/Rectangle_deckstop@1x (2).png");
+  background-image: url("/src/images/rectangle-desktop@1x.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,6 +24,11 @@
   height: 598px;
   position: relative;
   padding: 32px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-home__card {
+    content: url("/src/images/rectangle-desktop@2x.png");
+  }
 }
 @media screen and (max-width: 550px) {
   .hero-home__card {
@@ -182,7 +187,6 @@
   border: 1px solid #fff;
   border-radius: 60px;
   padding: 14px 28px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .hero-home__cbutton:hover {
   color: #93abae;
@@ -231,6 +235,7 @@
   background-color: #2c2f3e;
   border-radius: 5%;
   padding: 20px 20px 25px 20px;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .cards-home__card:nth-child(2) .cards-home__top {
   gap: 50px;
@@ -244,6 +249,9 @@
   .cards-home__card:nth-child(2) {
     display: none;
   }
+}
+.cards-home__card:hover {
+  scale: 1.1;
 }
 .cards-home__image {
   display: flex;
@@ -598,7 +606,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .rent-home__button:hover {
-  background-color: #93ABAE;
+  background-color: #93abae;
   border: 1px solid black;
   color: #1f212d;
 }
@@ -775,14 +783,15 @@
   width: 384px;
   height: 282px;
   background-color: #292c36;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 @media screen and (max-width: 768px) {
-  .people-home:nth-child(2) {
+  .people-home:nth-child(3) {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .people-home:nth-child(3) {
+  .people-home:nth-child(2) {
     display: none;
   }
 }

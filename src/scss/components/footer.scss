@@ -78,19 +78,12 @@
     @media screen and (max-width: $mobile) {
       align-items: start;
       margin-left: -30px;
-      
     }
   }
 
   // .footer__item
 
   &__item {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    &:hover {
-      background-color: #a6bbb9;
-      cursor: pointer;
-      border-radius: 4px;
-    }
   }
 
   // .footer__link
@@ -103,6 +96,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $whiteColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover {
+      color: #a1b5ba;
+      cursor: pointer;
+    }
   }
 
   // .footer__right
@@ -148,9 +146,41 @@
   &__itemr {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:hover {
-     border-color: linear-gradient(to right, #BEC7C2, #A1B5BA);
-      
-      
+      border-color: linear-gradient(to right, #bec7c2, #a1b5ba);
+    }
+  }
+
+  // .footer__links
+
+  &__links {
+    &:hover .footer__rect{
+      stroke:#A1B5BA ;
+    }
+    &:hover .footer__path{
+      fill:#A1B5BA ;
+    }
+  }
+
+  // .footer__svg
+
+  &__svg {
+  }
+
+  // .footer__rect
+
+  &__rect {
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover{
+      stroke:#A1B5BA ;
+    }
+  }
+
+  // .footer__path
+
+  &__path {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    &:hover{
+      fill:#A1B5BA ;
     }
   }
 

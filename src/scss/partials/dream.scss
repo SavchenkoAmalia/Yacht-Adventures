@@ -42,7 +42,7 @@
         margin-top: 0;
       }
       &:nth-child(3) {
-       margin-top: 200px;
+        margin-top: 200px;
       }
     }
     @media screen and (max-width: 680px) {
@@ -51,8 +51,8 @@
         content: url('/src/images/yaht1.formobile-mobile@1x.png');
         width: 95%;
         @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
           content: url('/src/images/yaht1.formobile-mobile@2x.png');
         }
       }
@@ -98,7 +98,7 @@
     margin-bottom: 30px;
     // background-image: url('/src/images/Ellipse-for-dream.png');
     // background-repeat: no-repeat;
-    
+
     @media screen and (max-width: $tablet) {
       font-size: 70px;
       max-width: 650px;

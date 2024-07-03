@@ -4,39 +4,155 @@
       <!-- <img src="./images/Rectangle_deckstop@1x.png" class="hero-home__background" alt="background"> -->
       <ul class="hero-home__list">
         <!-- add "URl" to the img -->
-         <li class="hero-home__item">
-        <img
-          src="./images/client_deckstop@1x.png"
-          class="hero-home__client1"
-          alt="client 1"
-        />
-      </li>
-      <li class="hero-home__item">
-        <img
-          src="./images/client2_deckstop@1x.png"
-          class="hero-home__client2"
-          alt="client 2"
-        />
-      </li>
         <li class="hero-home__item">
-        <img
-          src="./images/client3_deckstop@1x.png"
-          class="hero-home__client3"
-          alt="client 3"
-        />
-      </li>
+          <picture>
+            <source
+              srcset="
+                /src/images/client-desktop@1x.png 1x,
+                /src/images/client-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/client-tablet@1x.png 1x,
+                /src/images/client-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /src/images/client-mobile@1x.png 1x,
+                /src/images/client-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hero-home__client1"
+              src="/src/images/client-desktop@1x.png"
+              alt="client 1"
+            />
+          </picture>
+        </li>
+        <li class="hero-home__item">
+          <picture>
+            <source
+              srcset="
+                /src/images/client2-desktop@1x.png 1x,
+                /src/images/client2-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/client2-tablet@1x.png 1x,
+                /src/images/client2-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /src/images/client2-mobile@1x.png 1x,
+                /src/images/client2-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hero-home__client2"
+              src="/src/images/client2-desktop@1x.png"
+              alt="client 2"
+            />
+          </picture>
+        </li>
+        <li class="hero-home__item">
+          <picture>
+            <source
+              srcset="
+                /src/images/client3-desktop@1x.png 1x,
+                /src/images/client3-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/client3-tablet@1x.png 1x,
+                /src/images/client3-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /src/images/client3-mobile@1x.png 1x,
+                /src/images/client3-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hero-home__client3"
+              src="/src/images/client3-desktop@1x.png"
+              alt="client 3"
+            />
+          </picture>
+        </li>
       </ul>
       <p class="hero-home__cltext">Our clients</p>
-      <img
-        src="./images/imgYacht_deckstop@1x.png"
-        class="hero-home__Yacht"
-        alt="Yacht Image 1"
-      />
-      <img
-        src="./images/man_deckstop1x.png"
-        class="hero-home__man"
-        alt="Man "
-      />
+      <picture>
+        <source
+          srcset="
+            /src/images/yacht-desktop@1x.png 1x,
+            /src/images/yacht-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            /src/images/yacht-tablet@1x.png 1x,
+            /src/images/yacht-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/yacht-mobile@1x.png 1x,
+            /src/images/yacht-mobile@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="hero-home__yacht"
+          src="/src/images/yacht-desktop@1x.png"
+          alt="yacht"
+        />
+      </picture>
+
+
+      <source
+      srcset="
+        /src/images/man-desktop@1x.png 1x,
+        /src/images/man-desktop@2x.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        /src/images/man-tablet@1x.png 1x,
+        /src/images/man-tablet@2x.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        /src/images/man-mobile@1x.png 1x,
+        /src/images/man-mobile@2x.png 2x
+      "
+      media="(min-width: 320px)"
+    />
+    <img
+      class="hero-home__man"
+      src="/src/images/man-desktop@1x.png"
+      alt="Man"
+    />
+  </picture>
       <div class="hero-home__informations">
         <h2 class="hero-home__price">$12M</h2>
         <p class="hero-home__information">

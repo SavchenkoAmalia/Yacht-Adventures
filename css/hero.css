@@ -16,7 +16,7 @@
   }
 }
 .hero-home__card {
-  background-image: url("/src/images/Rectangle_deckstop@1x (2).png");
+  background-image: url("/src/images/rectangle-desktop@1x.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,6 +24,11 @@
   height: 598px;
   position: relative;
   padding: 32px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-home__card {
+    content: url("/src/images/rectangle-desktop@2x.png");
+  }
 }
 @media screen and (max-width: 550px) {
   .hero-home__card {
@@ -182,7 +187,6 @@
   border: 1px solid #fff;
   border-radius: 60px;
   padding: 14px 28px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .hero-home__cbutton:hover {
   color: #93abae;

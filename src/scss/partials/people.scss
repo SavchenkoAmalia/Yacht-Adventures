@@ -94,10 +94,10 @@
     //   transform: scale(1.1);
     // }
 
-    @media screen and (max-width: 845px){
-      &:nth-child(1){
+    @media screen and (max-width: 845px) {
+      &:nth-child(1) {
         background-color: #93abae;
-      transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
   }
@@ -119,16 +119,17 @@
     width: 384px;
     height: 282px;
     background-color: #292c36;
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  &:nth-child(3) {
+    @media screen and (max-width: $tablet) {
+      display: none;
     }
-    @media screen and (max-width: $tablet){
-      &:nth-child(2){
-        display: none;
-      }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
-    @media screen and (max-width: $mobile){
-      &:nth-child(3){
-        display: none;
-      }
   }
 
   // .people-home__img

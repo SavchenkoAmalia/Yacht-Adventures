@@ -64,14 +64,6 @@
     margin-left: -30px;
   }
 }
-.footer__item {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-.footer__item:hover {
-  background-color: #a6bbb9;
-  cursor: pointer;
-  border-radius: 4px;
-}
 .footer__link {
   font-family: "DM+Sans", sans-serif;
   font-weight: 500;
@@ -80,6 +72,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.footer__link:hover {
+  color: #a1b5ba;
+  cursor: pointer;
 }
 .footer__right {
   display: flex;
@@ -119,7 +116,25 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .footer__itemr:hover {
-  border-color: linear-gradient(to right, #BEC7C2, #A1B5BA);
+  border-color: linear-gradient(to right, #bec7c2, #a1b5ba);
+}
+.footer__links:hover .footer__rect {
+  stroke: #A1B5BA;
+}
+.footer__links:hover .footer__path {
+  fill: #A1B5BA;
+}
+.footer__rect {
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.footer__rect:hover {
+  stroke: #A1B5BA;
+}
+.footer__path {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.footer__path:hover {
+  fill: #A1B5BA;
 }
 .footer__listb {
   display: flex;

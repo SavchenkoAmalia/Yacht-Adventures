@@ -22,29 +22,33 @@
     background-color: #2c2f3e;
     border-radius: 5%;
     padding: 20px 20px 25px 20px;
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:nth-child(2) .cards-home__top {
-        gap: 50px;
+      gap: 50px;
     }
-    @media screen and (max-width: $tablet){
-        &:nth-child(3){
-            display: none;
-        }
+    @media screen and (max-width: $tablet) {
+      &:nth-child(3) {
+        display: none;
+      }
     }
-    @media screen and (max-width: $mobile){
-        &:nth-child(2){
-            display: none;
-        }
+    @media screen and (max-width: $mobile) {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      scale: 1.1;
     }
   }
 
-    // .cards-home__image
+  // .cards-home__image
 
-    &__image {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 25px;
-    }
-
+  &__image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
 
   // .cards-home__top
 
