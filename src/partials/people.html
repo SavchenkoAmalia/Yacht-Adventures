@@ -19,11 +19,34 @@
       <div class="people-home__slides">
         <ul class="people-home__list hidden">
           <li class="people-home__item">
-            <img
-              src="/src/images/john.png"
-              alt="John"
-              class="people-home__img"
-            />
+            <picture>
+              <source
+                srcset="
+                  /src/images/john-desktop@1x.png 1x,
+                  /src/images/john-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  /src/images/john-tablet@1x.png 1x,
+                  /src/images/john-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /src/images/john-mobile@1x.png 1x,
+                  /src/images/john-mobile@2x.png 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="people-home__img"
+                src="/src/images/john-desktop@1x.png"
+                alt="john"
+              />
+            </picture>
             <h2 class="people-home__name">John Wax</h2>
             <p class="people-home__description">
               I rented the Lagoon 620 with my family for a week-long vacation
@@ -32,11 +55,34 @@
             </p>
           </li>
           <li class="people-home__item">
-            <img
-              src="/src/images/victoria.png"
-              alt="Victoria"
-              class="people-home__img"
-            />
+            <picture>
+              <source
+                srcset="
+                  /src/images/victoria-desktop@1x.png 1x,
+                  /src/images/victoria-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  /src/images/victoria-tablet@1x.png 1x,
+                  /src/images/victoria-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /src/images/victoria-mobile@1x.png 1x,
+                  /src/images/victoria-mobile@2x.png 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="people-home__img"
+                src="/src/images/victoria-desktop@1x.png"
+                alt="victoria"
+              />
+            </picture>
             <h2 class="people-home__name">Victoria Romashenko</h2>
             <p class="people-home__description">
               The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -45,11 +91,34 @@
             </p>
           </li>
           <li class="people-home__item">
-            <img
-              src="/src/images/ihor.png"
-              alt="Ihor"
-              class="people-home__img"
-            />
+            <picture>
+              <source
+                srcset="
+                  /src/images/ihor-desktop@1x.png 1x,
+                  /src/images/ihor-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  /src/images/ihor-tablet@1x.png 1x,
+                  /src/images/ihor-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /src/images/ihor-mobile@1x.png 1x,
+                  /src/images/ihor-mobile@2x.png 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="people-home__img"
+                src="/src/images/ihor-desktop@1x.png"
+                alt="ihor"
+              />
+            </picture>
             <h2 class="people-home__name">Ihor Trachuk</h2>
             <p class="people-home__description">
               The Azimut 80 was the most luxurious yacht I've ever been on. The
