@@ -182,6 +182,24 @@ body {
   padding: 0 15px;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduce-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 .footer {
   background-color: #1F212D;
   padding-top: 20px;
@@ -733,6 +751,7 @@ body {
 }
 .cards-home__card:nth-child(2) .cards-home__top {
   gap: 50px;
+  transition-delay: 200ms;
 }
 @media screen and (max-width: 768px) {
   .cards-home__card:nth-child(3) {

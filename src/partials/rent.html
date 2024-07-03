@@ -1,6 +1,7 @@
-<section class="home__rent rent-home">
-  <div class="rent-home__block-title">
+<section class="home__rent rent-home ">
+  <div class="rent-home__block-title hidden">
     <h2 class="rent-home__title">Rent a yacht now</h2>
+
     <picture>
       <source
         srcset="/src/images/rent-yaht-desktop@1x.png 1x, /src/images/rent-yaht-desktop@2x.png 2x"
@@ -16,13 +17,11 @@
       />
       <img
       class="rent-home__image"
-      src="/src/images/rent-yaht-desktop@1x.png"
-      alt="Yaht Rent"
-    />
+      src="/src/images/rent-yaht-desktop@1x.png"/>
     </picture>
   </div>
   <div class="rent-home__block-inputs">
-    <ul class="rent-home__list">
+    <ul class="rent-home__list hidden">
       <li class="rent-home__item">
         <input class="rent-home__input" type="text" placeholder="Full Name" />
       </li>
@@ -44,7 +43,8 @@
         />
       </li>
     </ul>
-    <button class="rent-home__button" modal-open>
+    <button class="rent-home__button">
+    <button class="rent-home__button">
       Send<img src="/src/images/arrow-right.png" alt="Arrow right" />
     </button>
     <div class="modal" id="modal">
