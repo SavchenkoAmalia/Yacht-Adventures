@@ -240,7 +240,6 @@
 }
 .cards-home__card:nth-child(2) .cards-home__top {
   gap: 50px;
-  transition-delay: 200ms;
 }
 @media screen and (max-width: 768px) {
   .cards-home__card:nth-child(3) {
@@ -665,14 +664,6 @@
 }
 .rent-home__item {
   max-width: 100%;
-}
-.rent-home__gradient {
-  position: relative;
-  top: -38%;
-  left: 106.7%;
-  fill: #91afba;
-  z-index: 2;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
