@@ -1,23 +1,32 @@
-<section class="home__rent rent-home ">
+<section class="home__rent rent-home">
   <div class="rent-home__block-title hidden">
     <h2 class="rent-home__title">Rent a yacht now</h2>
-
     <picture>
       <source
-        srcset="/src/images/rent-yaht-desktop@1x.png 1x, /src/images/rent-yaht-desktop@2x.png 2x"
+        srcset="
+          /src/images/rent-yaht-desktop@1x.png 1x,
+          /src/images/rent-yaht-desktop@2x.png 2x
+        "
         media="(min-width: 1200px)"
       />
       <source
-        srcset="/src/images/rent-yaht-tablet@1x.png 1x, /src/images/rent-yaht-tablet@2x.png 2x"
+        srcset="
+          /src/images/rent-yaht-tablet@1x.png 1x,
+          /src/images/rent-yaht-tablet@2x.png 2x
+        "
         media="(min-width: 768px)"
       />
       <source
-        srcset="/src/images/rent-yaht-mobile@1x.png 1x, /src/images/rent-yaht-mobile@2x.png 2x"
+        srcset="
+          /src/images/rent-yaht-mobile@1x.png 1x,
+          /src/images/rent-yaht-mobile@2x.png 2x
+        "
         media="(min-width: 320px)"
       />
       <img
-      class="rent-home__image"
-      src="/src/images/rent-yaht-desktop@1x.png"/>
+        class="rent-home__image"
+        src="/src/images/rent-yaht-desktop@1x.png"
+      />
     </picture>
   </div>
   <div class="rent-home__block-inputs">
@@ -44,40 +53,116 @@
       </li>
     </ul>
     <button class="rent-home__button">
-    <button class="rent-home__button">
       Send<img src="/src/images/arrow-right.png" alt="Arrow right" />
     </button>
     <div class="modal" id="modal">
       <div class="modal__content is-hidden">
-          <button class="modal__close" id="closeModal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 6L6 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M6 6L18 18" stroke="#F6F5EF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </button>
-          <svg class="modal__gradient" width="667" height="666" viewBox="0 0 667 666" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.6" filter="url(#filter0_f_92_1857)">
-              <ellipse cx="132.5" cy="132.5" rx="132.5" ry="132.5" transform="matrix(0.707168 -0.707046 0.708995 0.705214 146 333)" fill="#91AFBA" />
-            </g>
-            <defs>
-              <filter id="filter0_f_92_1857" x="0.958862" y="0.44043" width="665.365" height="664.634" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_92_1857" />
-              </filter>
-            </defs>
+        <button class="modal__close" id="closeModal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="#F6F5EF"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
-<div class="modal__cinema">
-  
-          <img class="modal__img" src="/src/images/yacht-desktop@1x.png" alt="Thank You Image" />
+        </button>
+        <svg
+          class="modal__gradient"
+          width="667"
+          height="666"
+          viewBox="0 0 667 666"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.6" filter="url(#filter0_f_92_1857)">
+            <ellipse
+              cx="132.5"
+              cy="132.5"
+              rx="132.5"
+              ry="132.5"
+              transform="matrix(0.707168 -0.707046 0.708995 0.705214 146 333)"
+              fill="#91AFBA"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_92_1857"
+              x="0.958862"
+              y="0.44043"
+              width="665.365"
+              height="664.634"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_92_1857"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <div class="modal__cinema">
+          <picture>
+            <source
+              srcset="
+                /src/images/yacht-desktop@1x.png 1x,
+                /src/images/yacht-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/yacht-tablet@1x.png 1x,
+                /src/images/yacht-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /src/images/yacht-mobile@1x.png 1x,
+                /src/images/yacht-mobile@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="modal__img"
+              src="/src/images/yacht-desktop@1x.png"
+              alt="Thank You Image"
+            />
+          </picture>
         </div>
         <div class="modal__block">
           <h2 class="modal__title">Thank you</h2>
           <p class="modal__description">
-            Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.
+            Thank you for choosing Yacht Adventures, your booking details have
+            been received and our team will be in touch shortly to confirm your
+            reservation and provide any additional information or assistance you
+            may need.
           </p>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 </section>
