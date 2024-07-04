@@ -1,0 +1,2 @@
+var modal=document.getElementById("modal"),closeModal=document.getElementById("closeModal"),openModalButton=document.querySelector(".rent-home__button"),openModal=function(){modal.style.display="block",document.body.classList.add("no-scroll")},closeModalFunc=function(){modal.style.display="none",document.body.classList.remove("no-scroll")};openModalButton.addEventListener("click",openModal),closeModal.addEventListener("click",closeModalFunc);
+//# sourceMappingURL=index.85beafba.js.map
