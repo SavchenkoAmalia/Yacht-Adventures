@@ -583,6 +583,11 @@
   line-height: 110%;
   letter-spacing: -0.04em;
 }
+@media screen and (max-width: 480px) {
+  .rent-home__title {
+    font-size: 36px;
+  }
+}
 .rent-home__image {
   max-width: 100%;
 }
@@ -779,7 +784,7 @@
   overflow: auto;
 }
 .modal__content {
-  background-color: #1F212D;
+  background-color: #1f212d;
   border-radius: 40px;
   position: absolute;
   top: 50%;

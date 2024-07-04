@@ -15,6 +15,11 @@
   line-height: 110%;
   letter-spacing: -0.04em;
 }
+@media screen and (max-width: 480px) {
+  .rent-home__title {
+    font-size: 36px;
+  }
+}
 .rent-home__image {
   max-width: 100%;
 }
